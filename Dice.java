@@ -12,7 +12,7 @@ public class Dice{
    
    //Constructor
    public Dice(){
-      this.value = value;
+   this.value = value;
    }
    
    //Getter
