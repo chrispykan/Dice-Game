@@ -1,4 +1,4 @@
-/* -Write a class, Dice, which defines a dice object
+/* -A class, Dice, which defines a dice object
    -A constructor that initializes the die to 0
    -A Getter that gets the value of the dice
    -A Method that rolls the dice*/

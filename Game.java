@@ -16,16 +16,31 @@ public class Game{
             //roll dice and print result
             die1.roll();
             die2.roll();
-            System.out.println(die1.getValue() + die2.getValue());
+            System.out.println(die1.getValue() + " " + die2.getValue());
             
-            //Stop round if player rolls a 6
-            //if (die.getValue() == value){
+            //Stop round if a player rolls a 6 
+            //if ((die1.getValue() == value) | (die2.getValue() == value)) {
                //break;
             //}
+            
+            //check if Player 1 has won the round
+             if ((die1.getValue() == value) && (die2.getValue() != value)){
+               System.out.println("Player 1 has won this round");
+               break;
+            } 
+            // check if Player 2 has won the round
+             else if ((die1.getValue() != value) && (die2.getValue() == value)){
+               System.out.println("Player 2 has won this round");
+               break;
+            } 
+            //check if the players have tied
+            else if ((die1.getValue() == value) && (die2.getValue() == value)){
+               System.out.println("There's a TIE");
+            }
          }
-      //line break between each game
-       System.out.println();
+       System.out.println(); //line after last round of each game
 
-      }
-   }
+
+      }//end inner rounds loop
+   }//end outter games loop
 }
