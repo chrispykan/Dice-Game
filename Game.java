@@ -12,7 +12,7 @@ public class Game {
         //10 games
         for (int i = 1; i <= 10; i++) {
 
-            //print which game we're at
+            //print which game we're currently on once at the beginning of the  game
             System.out.println("Game: " + i);
 
             //3 rounds
@@ -20,22 +20,22 @@ public class Game {
 
                 die1.roll();
                 die2.roll();
-                //Print the round we're at and the roll's result for each player
+                //Print the round we're currently on and each player's roll result
                 System.out.println("\nRound: " + j + "\n" + "Die 1: " + die1.getValue() + " - " + "Die 2: " + die2.getValue());
 
                 //Player WON the round
                 if ((die1.getValue() == value) && (die2.getValue() != value)) {
-                    System.out.println("\nPlayer 1 WON!\n\n");
+                    System.out.println("\nPlayer 1 WON Game " + i + "!\n\n");
                     break;
                 }
                 //Player 2 WON the round
                 else if ((die1.getValue() != value) && (die2.getValue() == value)) {
-                    System.out.println("\nPlayer 2 WON!\n\n");
+                    System.out.println("\nPlayer 2 WON Game " + i + "!\n\n");
                     break;
                 }
                 //Players TIED the round
                 else if ((die1.getValue() == value) && (die2.getValue() == value)) {
-                    System.out.println("\nYou TIED at Round " + j + "\n");
+                    System.out.println("\nYou're TIED\n\n");
                 }
                 //NO player won the round
                 else if ((die1.getValue() != value) && (die2.getValue() != value) && (j == 3)) {
