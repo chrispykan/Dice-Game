@@ -1,7 +1,7 @@
 /* -The game consists of rolling a die, trying to get a 6.
-   -There are 10 "Games" in this program.
+   -There are 10 "games" in this program.
    -Each game can have up to 3 rounds where the player rolls for each round.
-   -Player wins the round by rolling a 6 within the 3 rounds*/
+   -Player wins the "game" by rolling a 6 within the 3 rounds*/
 
 public class Game {
     public static void main(String[] args) {
